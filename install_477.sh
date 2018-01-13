@@ -39,17 +39,17 @@ sudo make install
 ## Other avr stuff
 
 sudo apt-get -f -y install
-sudo apt autoremove
+sudo apt -y autoremove
 
 sudo apt-get -f -y install
 sudo apt-get install -y gcc-avr
 sudo apt-get -f -y install
-sudo apt autoremove
+sudo apt -y autoremove
 
 sudo apt-get install -y binutils-avr
 sudo apt-get install -y avr-libc
 
-sudo apt autoremove
+sudo apt -y autoremove
 
 /usr/local/bin/ACG-Package-Suite/ubuntu/install_usbip.sh
 /usr/local/bin/ACG-Package-Suite/ubuntu/install_seafile.sh

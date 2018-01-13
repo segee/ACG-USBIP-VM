@@ -16,7 +16,7 @@
     become: true
     apt: name={{item}} state=present
     with_items:
-      - git
+      - git 
       - nasm
       - bison
       - flex
@@ -127,7 +127,6 @@
       - xsltproc
       - python-libxml2
       - xutils
-      - xfce4
     when: ansible_distribution == 'Ubuntu'
 
   - name: Install everything else
@@ -238,7 +237,7 @@
     lineinfile:
       create: yes
       state: present
-      line: xfce4-session
+      line: lxsession -s Lubuntu -e LXDE
       dest: /home/{{item}}/.xsession
     with_items:
       - "{{home_dir.stdout_lines}}"
