@@ -12,6 +12,13 @@ sudo chmod 444 /etc/sudoers.d/acg
 /usr/local/bin/ACG-USBIP-VM/install_lubuntu.sh
 
 
+export PATH=$PATH:/usr/local/bin/ACG-Package-Suite:/usr/local/bin/ACG-Package-Suite/ubuntu:/usr/local/bin/ACG-USBIP-VM:/usr/games:/usr/local/games
+
+echo PATH=\"$PATH\" | sudo tee /etc/environment
+
+sudo timedatectl set-timezone America/New_York
+
+
 # Code to download, patch, and build avrdude 6.3 on Ubuntu
 #
 # 
