@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt -y autoremove
 
 sudo apt-get -y autoremove
-printf "student\nacgrocks" | /usr/local/bin/ACG-Package/Suite/ubuntu/add_a_user.sh
+printf "student\nacgrocks" | sudo /usr/local/bin/ACG-Package/Suite/ubuntu/add_a_user.sh
 sudo cp /usr/local/bin/ACG-USBIP-VM/acg /etc/sudoers.d/acg
 sudo chmod 444 /etc/sudoers.d/acg
 /usr/local/bin/ACG-USBIP-VM/install_lubuntu.sh
