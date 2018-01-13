@@ -1,0 +1,5 @@
+# Created by cloud-init v. 0.7.7 on Wed, 31 May 2017 16:27:31 +0000
+
+# User rules for acg and student
+acg ALL=(ALL) NOPASSWD:ALL
+student ALL=(ALL) NOPASSWD:ALL
