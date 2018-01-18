@@ -7,6 +7,8 @@ sudo apt -y autoremove
 
 sudo apt-get -y autoremove
 printf "student\nacgrocks" | sudo /usr/local/bin/ACG-Package-Suite/ubuntu/add_a_user.sh
+sudo deluser --remove-home ubuntu
+sudo deluser --remove-home acguser
 sudo cp /usr/local/bin/ACG-USBIP-VM/acg /etc/sudoers.d/acg
 sudo chmod 444 /etc/sudoers.d/acg
 /usr/local/bin/ACG-USBIP-VM/install_lubuntu.sh
@@ -29,7 +31,7 @@ sudo apt-get install -f -y  build-essential wget gcc libevent-dev libcurl3 pytho
 
 sudo apt-get install -f  -y make automake autoconf flex bison libusb-dev libusb-1.0-0-dev  libx11-dev libftdi1 subversion vim
 wget http://download.savannah.gnu.org/releases/avrdude/avrdude-doc-6.3.pdf
-
+cd /tmp
 mkdir avrdude
 cd avrdude
 
@@ -66,6 +68,5 @@ sudo apt -y autoremove
 /usr/local/bin/ACG-Package-Suite/ubuntu/install_chrome_and_remote_desktop.sh
 sudo apt-get install -y dfu-programmer
 
-# Need to add student user
 
 /usr/local/bin/ACG-USBIP-VM/install_xrdp.sh
