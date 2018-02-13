@@ -7,7 +7,7 @@
 #MYGUAC="192.168.0.`netstat -t |grep 3389 |cut -f 2 -d : |cut -f 4 -d .`"
 # Rats, that didn't work
 
-MYGUAC="192.168.0.34"
+MYGUAC="192.168.0.5"
 
 echo "my GUAC server is "$MYGUAC
 MYUSBPORT=$((6000+$1))
