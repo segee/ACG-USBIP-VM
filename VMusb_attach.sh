@@ -27,8 +27,9 @@ MYSSHPORT=$((7000+$1))
 #echo $MYUSBPORT
 sudo usbip --tcp-port $MYUSBPORT attach -r $MYGUAC -b $2
 
-fi
+else
 
 echo
 echo "Bad Unique id value"
+fi
 

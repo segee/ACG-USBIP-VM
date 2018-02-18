@@ -27,8 +27,8 @@ MYUSBPORT=$((6000+$1))
 MYSSHPORT=$((7000+$1))
 echo $MYUSBPORT
 sudo usbip --tcp-port $MYUSBPORT list -r $MYGUAC
-fi
+else
 
 echo
 echo "Bad value:"
-
+fi
